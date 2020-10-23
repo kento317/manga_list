@@ -4,37 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="list">
     <header>
         <h1>Manga List</h1>
+        <p>～読んでいる途中の漫画を管理しましょう～</p>
+        <div class="button_wrapper">
+          <button type="button" class="btn btn-success">新しく漫画を追加</button>
+        </div>
     </header>
 
-    <nav>
-        
-    </nav>
 
     <main>
-        <tr>
-            <th>タイトル</th>
-                <td></td>
-        </tr>
-        <tr>
-            <th>現在の巻数</th>
-                <td></td>
-        </tr>
-        <tr>
-            <th>次の巻数</th>
-                <td></td>
-        </tr>
+      
+        <table class="table">
+            
+            <thead>
+              <tr>
+                <th>#</th>
+                <th scope="col">タイトル</th>
+                <th scope="col">巻数</th>
+                <th scope="col">次巻</th>
+                <th scope="col">補足</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>ワンピース</td>
+                <td>34巻</td>
+                <td>35巻</td>
+                <td>ああああああ</td>
+                <td>
+                  <button type="button" class="btn btn-primary">編集</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger">削除</button>
+                </td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>ナルト</td>
+                <td>12巻</td>
+                <td>13巻</td>
+                <td>いいいいいい</td>
+                <td>
+                  <button type="button" class="btn btn-primary">編集</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger">削除</button>
+                </td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>ドラゴンボール</td>
+                <td>29巻</td>
+                <td>30巻</td>
+                <td>ううううううう</td>
+                <td>
+                  <button type="button" class="btn btn-primary">編集</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger">削除</button>
+                </td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
     </main>
 
     <footer></footer>
 
 
-
+    
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

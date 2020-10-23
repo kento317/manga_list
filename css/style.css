@@ -1,2 +1,264 @@
 @charset "utf-8";
 
+.list header{
+    color: white;
+    background-color: #4e4e4e;
+    padding: 70px 100px;
+}
+
+.list header h1{
+    font-size: 80px;
+    text
+    
+}
+
+.list header p{
+    font-size: 20px;
+    margin-top: 30px;
+    
+}
+
+.list header .btn{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.edit h1{
+    color: white;
+    background-color: #4e4e4e;
+    padding: 40px 100px;
+}
+
+.edit form{
+    margin-top: 60px;
+}
+
+.edit .form-group{
+    margin: 30px 0px;
+}
+
+.edit .button {
+    text-align: right;
+}
+
+.edit .btn{
+    padding: 15px 30px;
+    margin-right: 20px;
+}
+
+.add h1{
+    color: white;
+    background-color: #4e4e4e;
+    padding: 40px 100px;
+}
+
+.add form{
+    margin-top: 60px;
+}
+
+.add .form-group{
+    margin: 30px 0px;
+}
+
+.add .button {
+    text-align: right;
+}
+
+.add .btn{
+    padding: 15px 30px;
+    margin-right: 20px;
+}
+
+
+.delete h1{
+    color: white;
+    background-color: #4e4e4e;
+    padding: 40px 100px;
+}
+
+.delete .button {
+    text-align: right;
+}
+
+.delete .btn{
+    padding: 15px 30px;
+    margin-right: 20px;
+}
+
+.check h1{
+    color: white;
+    background-color: #4e4e4e;
+    padding: 40px 100px;
+    font-size: 30px;
+}
+
+.check .button{
+    text-align: right;
+}
+
+.check .btn{
+    padding: 15px 30px;
+    margin-right: 20px;
+}
+
+.done h1{
+    color: white;
+    background-color: #4e4e4e;
+    padding: 40px 100px;
+    font-size: 30px;
+}
+
+.done .button{
+    text-align: right;
+}
+
+.done .btn{
+    padding: 15px 30px;
+    margin-right: 20px;
+}
+
+
+.login h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 600;
+    
+}
+
+.login{background: #eee url(https://www.pakutaso.com/shared/img/thumb/PAK88_manganotana20141108161323_TP_V.jpg);}
+html,body{
+    position: relative;
+    height: 100%;
+}
+
+.login-container{
+    position: relative;
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+#output{
+    position: absolute;
+    width: 300px;
+    top: -75px;
+    left: 0;
+    color: #fff;
+}
+
+#output.alert-success{
+    background: rgb(25, 204, 25);
+}
+
+#output.alert-danger{
+    background: rgb(228, 105, 105);
+}
+
+
+.login-container::before,.login-container::after{
+    content: "";
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 3.5px;left: 0;
+    background: #fff;
+    z-index: -1;
+    -webkit-transform: rotateZ(4deg);
+    -moz-transform: rotateZ(4deg);
+    -ms-transform: rotateZ(4deg);
+    border: 1px solid #ccc;
+
+}
+
+.login-container::after{
+    top: 5px;
+    z-index: -2;
+    -webkit-transform: rotateZ(-2deg);
+     -moz-transform: rotateZ(-2deg);
+      -ms-transform: rotateZ(-2deg);
+
+}
+
+.avatar{
+    width: 100px;height: 100px;
+    margin: 10px auto 30px;
+    border-radius: 100%;
+    border: 2px solid #aaa;
+    background-size: cover;
+}
+
+.form-box input{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height:40px;
+    border: 1px solid #ccc;;
+    background: #fafafa;
+    transition:0.2s ease-in-out;
+
+}
+
+.form-box input:focus{
+    outline: 0;
+    background: #eee;
+}
+
+.form-box input[type="text"]{
+    border-radius: 5px 5px 0 0;
+    text-transform: lowercase;
+}
+
+.form-box input[type="password"]{
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+}
+
+.form-box button.login{
+    margin-top:15px;
+    padding: 10px 20px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
